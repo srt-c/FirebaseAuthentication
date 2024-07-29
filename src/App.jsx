@@ -14,12 +14,13 @@ function App() {
 
   return (
     <>
-
-      <form onSubmit={handleSubmit}>
-        <input type="e-mail" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
-        <button disabled={!email || !password} type="submit">Register</button>
-      </form>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input type="e-mail" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} required />
+          <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
+          <button disabled={!email || !password} type="submit"> Register </button>
+        </form>
+      </div>
     </>
   )
 }
